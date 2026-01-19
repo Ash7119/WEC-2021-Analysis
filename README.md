@@ -6,15 +6,27 @@ This analysis is presented by using 2 line plots.
 
 ### Team Consistency View
 Plot Type: Line plot with markers
+
 Axes:
 - X-axis: Lap number
 - Y-axis: Lap time in seconds
 - Color: Team number
 - Line group: Driver stint
 
-What This View Shows: This plot highlights overall lap-by-lap consistency patterns at the team level, making it easy to compare how different teams manage pace across the race.
+What this view shows: This plot highlights the lap-by-lap consistency patterns at the team level, making it easy to compare how different teams manage pace across the race.
 
-Key Insights
-- Stable, flat traces indicate strong operational consistency
-- Repeated spikes often correspond to pit laps, traffic, or incidents
-- Differences between teams reveal relative race control and execution
+Key Insights:
+- Stable, flat traces indicate strong consistency
+- Spikes corresponding to the pit laps, traffic, or incidents
+- Variations between teams tells us how each crew manages tire life, pace, and on track situations throughout the race.
+
+### Stint-Specific Consistency View
+Plot Type: Line plot with markers
+
+Axes:
+- X-axis: Lap number
+- Y-axis: Lap time in seconds
+- Color: Driver stint
+- Line group: Team number
+
+What this view shows: This plot highlights the lap by lap consistency patterns of each stint individually which makes it easier to compare pace and degradation across differnt stints.
