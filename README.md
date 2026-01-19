@@ -13,7 +13,7 @@ Axes:
 - Color: Team number
 - Line group: Driver stint
 
-What this view shows: This plot highlights the lap-by-lap consistency patterns at the team level, making it easy to compare how different teams manage pace across the race.
+What does this plot show: This plot highlights the lap-by-lap consistency patterns at the team level, making it easy to compare how different teams manage pace across the race.
 
 Key Insights:
 - Stable, flat traces indicate strong consistency
@@ -29,7 +29,7 @@ Axes:
 - Color: Driver stint
 - Line group: Team number
 
-What this view shows: This plot highlights the lap by lap consistency patterns of each stint individually which makes it easier to compare pace and degradation across differnt stints.
+What does this plot show: This plot highlights the lap by lap consistency patterns of each stint individually which makes it easier to compare pace and degradation across differnt stints.
 
 Key Insights:
 - Proper separation between stints helps in avoiding misleading trends
@@ -42,22 +42,14 @@ Key Insights:
 - Using both of these views shows us how teams review race data, first at a broad level then stint level
 
 ## Pit Stop Strategy Effectiveness
-Plot Type: Line plot with markers
+Plot Type: Step line plot with pit stop markers
 
 Axes:
 - X-axis: Lap number
 - Y-axis: Lap time in seconds
-- Color: Driver stint
-- Line group: Team number
+- Color: Team number
+- Markers: Pit stop laps
 
-What this view shows: This plot highlights the lap by lap consistency patterns of each stint individually which makes it easier to compare pace and degradation across differnt stints.
+What does this plot show: This plot highlights how lap times change before and after a pit stop which helps us to evaluate pit timing and its impact on the performance
 
 Key Insights:
-- Proper separation between stints helps in avoiding misleading trends
-- Allows evaluation of intra-stint consistency
-- Highlights how pace resets after pit stops or driver changes
-
-### Motorsport Value
-- Team wide behavior
-- Stint level behavior
-- Using both of these views shows us how teams review race data, first at a broad level then stint level
