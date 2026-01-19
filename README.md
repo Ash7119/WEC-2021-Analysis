@@ -11,7 +11,9 @@ Axes:
 - Y-axis: Lap time in seconds
 - Color: Team number
 - Line group: Driver stint
+
 What This View Shows: This plot highlights overall lap-by-lap consistency patterns at the team level, making it easy to compare how different teams manage pace across the race.
+
 Key Insights
 - Stable, flat traces indicate strong operational consistency
 - Repeated spikes often correspond to pit laps, traffic, or incidents
