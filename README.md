@@ -30,3 +30,15 @@ Axes:
 - Line group: Team number
 
 What this view shows: This plot highlights the lap by lap consistency patterns of each stint individually which makes it easier to compare pace and degradation across differnt stints.
+
+Key Insights:
+- Proper separation between stints helps in avoiding misleading trends
+- Allows evaluation of intra-stint consistency
+- Highlights how pace resets after pit stops or driver changes
+
+#### Motorsport Value
+- Team wide behavior
+- Stint level behavior
+- Using both of these views shows us how teams review race data, first at a broad level then stint level
+
+## Pit Stop Strategy Effectiveness
