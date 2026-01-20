@@ -60,4 +60,15 @@ Key Insights:
 - Helps in modelling undercut or overcut strategies to be used in future races
 - Helps to evaluate when to make decisions relating to pit stop timing
 
-## 
+## Stint Length vs Degradation
+This analysis is presented by 3 plots:
+
+### Stint Length vs Lap Time Degradation (Delta vs First Lap)
+Plot type: Heatmap
+
+Axes:
+- X-axis: Lap number
+- Y-axis: Driver stint
+- Color: Lap time delta vs first lap of the stint
+
+What does this plot show: 
