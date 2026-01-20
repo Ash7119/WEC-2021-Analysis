@@ -42,7 +42,7 @@ Key Insights:
 - Using both of these views shows us how teams review race data, first at a broad level then stint level
 
 ## Pit Stop Strategy Effectiveness
-Plot Type: Step line plot with pit stop markers
+Plot Type: Step line chart with pit stop markers
 
 Axes:
 - X-axis: Lap number
@@ -72,3 +72,14 @@ Axes:
 - Color: Lap time delta vs first lap of the stint
 
 What does this plot show: 
+
+### Stint Degradation: Start vs End
+Plot type: Line Chart
+
+### Stint Degradation vs Stint Length
+Plot type: Scatter Plot
+
+## Gap Evolution to Leader:
+Plot type: Line Chart
+
+
