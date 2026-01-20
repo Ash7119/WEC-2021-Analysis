@@ -56,7 +56,7 @@ Key Insights:
 - Identifies which teams gained or loss time through pit timing
 - Highlights the effictiveness of the undercut or overcut strategies
 
-### Motorsport Value
+Motorsport Value
 - Helps in modelling undercut or overcut strategies to be used in future races
 - Helps to evaluate when to make decisions relating to pit stop timing
 
