@@ -60,18 +60,8 @@ Motorsport Value
 - Helps in modelling undercut or overcut strategies to be used in future races
 - Helps to evaluate when to make decisions relating to pit stop timing
 
-## Stint Length vs Degradation
-This analysis is presented by 3 plots:
-
-### Stint Length vs Lap Time Degradation (Delta vs First Lap)
-Plot type: Heatmap
-
-Axes:
-- X-axis: Lap number
-- Y-axis: Driver stint
-- Color: Lap time delta vs first lap of the stint
-
-What does this plot show: 
+## Stint Degradation
+This analysis is presented by 2 plots:
 
 ### Stint Degradation: Start vs End
 Plot type: Line Chart
@@ -80,6 +70,28 @@ Plot type: Line Chart
 Plot type: Scatter Plot
 
 ## Gap Evolution to Leader:
-Plot type: Line Chart
+Plot type: Multi Line Chart
 
+## Driver Pace Delta within Team and Team Pace Delta
 
+### Driver Pace Delta within Team
+Plot type: Box plot
+
+### Team Pace Comparison (Lap Time Δ vs Stint First Lap)
+Plot Type: Violin plot
+
+Axes:
+- X-axis: Team number
+- Y-axis: Lap time delta
+
+What does this plot show: The full distribution of lap time deltas for each team
+
+Key Insights:
+- Narrow violins means consistent race pace
+- Wide violins means high variability
+- Skewed distributions means aggressive or conservative strategies
+
+Motorsport Value:
+- Comparing overall team performance
+- Identifying consistency advantages
+- Helps in strategy and technical debriefs
