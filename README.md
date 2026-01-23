@@ -64,13 +64,28 @@ Motorsport Value
 This analysis is presented by 2 plots:
 
 ### Stint Degradation: Start vs End
-Plot type: Line Chart
+Plot Type: Line Chart
 
 ### Stint Degradation vs Stint Length
-Plot type: Scatter Plot
+Plot Type: Scatter Plot
+
+Axes:
+- X-axis: Stint length (laps)
+- Y-axis: Lap time degradation (end − start) (seconds)
+- Color: Team number
+
+What does this plot show: The points represent the stints. It measues how much time is gained or loss by taking the difference of the first and last lap of the stint.
+
+Key Insights:
+- Positive values indicate pace loss in the stint
+- Negative value indicate gain in pace in the stint
+
+Motorsport Value:
+- Optimal stint length decisions
+- Risk assessment for extending stints
 
 ## Gap Evolution to Leader:
-Plot type: Multi Line Chart
+Plot Type: Multi Line Chart
 
 Axes:
 - X-axis: Lap number
@@ -91,7 +106,7 @@ Motorsport Value:
 ## Driver Pace Delta within Team and Team Pace Delta
 
 ### Driver Pace Delta within Team
-Plot type: Box plot
+Plot Type: Box plot
 
 ### Team Pace Comparison (Lap Time Δ vs Stint First Lap)
 Plot Type: Violin plot
