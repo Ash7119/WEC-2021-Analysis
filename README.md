@@ -72,6 +72,22 @@ Plot type: Scatter Plot
 ## Gap Evolution to Leader:
 Plot type: Multi Line Chart
 
+Axes:
+- X-axis: Lap number
+- Y-axis: Gap to race leader (seconds)
+- Color: Team number
+
+What does this plot show: This plot displays how the time gap between each team and the race leader evolves lap by lap throughout the race.
+
+Key Insights:
+- Identifies when and where races are won or lost
+- Shows which teams can recover after setbacks
+
+Motorsport Value:
+- Evaluate race control and recovery ability
+- Understand competitive phases within a race
+- Support post race debriefs and strategy simulations
+
 ## Driver Pace Delta within Team and Team Pace Delta
 
 ### Driver Pace Delta within Team
