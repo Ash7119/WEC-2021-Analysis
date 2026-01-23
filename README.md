@@ -66,6 +66,24 @@ This analysis is presented by 2 plots:
 ### Stint Degradation: Start vs End
 Plot Type: Line Chart
 
+Axes:
+X-axis: Lap number (start and end of each stint)
+Y-axis: Raw lap time (s)
+Line: Team number
+Color: Driver Stint
+
+What does this plot show: Each line represents a single driver stint, dispaying the first lap to the last lap of the same stint, allowing a direct visual comparison of how lap time changes over the course of that stint.
+
+Key Insights:
+- Upward slope meaning that lap time increased by the end of the stint(degradation)
+- Flat or downward slope indicating a consistent or improving pace
+- Steeper slopes indicate stronger degradation effects
+
+Motorsport Value:
+- Provides a clear start to end comparison without lap by lap noise
+- Helps engineers evaluate how risky a stint is in terms of pace
+- Supports decisions on optimal stint length and driver deployment
+
 ### Stint Degradation vs Stint Length
 Plot Type: Scatter Plot
 
