@@ -108,6 +108,21 @@ Motorsport Value:
 ### Driver Pace Delta within Team
 Plot Type: Box plot
 
+Axes:
+- X-axis: Driver which is grouped by team number
+- Y-axis: Lap time delta vs stint first lap
+
+What does this plot show: The plot compares the pace of the drivers within the same team.
+
+Key Insights:
+- Tighter box indicating driver is more consistent
+- Lower median indicating faster driver
+
+Motorsport Value:
+- Driver performance evaluation
+- Reveals aggressive versus conservative driving styles
+- Data-backed comparisons during driver debriefs
+
 ### Team Pace Comparison (Lap Time Δ vs Stint First Lap)
 Plot Type: Violin plot
 
