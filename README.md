@@ -1,6 +1,14 @@
 # WEC-2022-Analysis
 This project focuses on the Hypercar Class of the 2021 WEC Championship with analysis performed between the teams for each race of the season. The goal is to extract performance, consistency, and strategic insights that are crucial to motorsport engineers, strategists, and analysts.
 
+The data was utilized from kaggle. The data was then filtered to only give me the 2021 season.
+Link: https://www.kaggle.com/datasets/tristenterracciano/fia-wec-lap-data-20122022 
+
+The visualizations were done by utilizing the plotly library. Their website helped me alot in doing this project.
+Link: https://plotly.com/python/
+
+To explore the interactive visualizations, please download the code and run it locally.
+
 ## Driver Stint Consistency
 This analysis is presented by using 2 line plots:
 
