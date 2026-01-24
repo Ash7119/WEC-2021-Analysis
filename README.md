@@ -6,6 +6,7 @@ The data was utilized from kaggle. The data was then filtered to only give me th
 Link: https://www.kaggle.com/datasets/tristenterracciano/fia-wec-lap-data-20122022 
 
 The visualizations were done by utilizing the plotly library. Their website helped me alot in doing this project.
+
 Link: https://plotly.com/python/
 
 To explore the interactive visualizations, please download the code and run it locally.
