@@ -158,7 +158,7 @@ Axes:
 - X-axis: Team number
 - Y-axis: Lap time delta
 
-What does this plot show: The full distribution of lap time deltas for each team
+What does this plot show: The plot compares the pace between the teams.
 
 Key Insights:
 - Narrow violins means consistent race pace
