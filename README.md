@@ -30,21 +30,23 @@ Key Insights:
 - Spikes corresponding to the pit laps, traffic, or incidents
 - Variations between teams tells us how each crew manages tire life, pace, and on track situations throughout the race
 
-### Stint-Specific Consistency View
-Plot Type: Line plot with markers
+### Driver-Level Consistency View
+Plot Type: Line plot with markers (faceted by team)
 
 Axes:
 - X-axis: Lap number
 - Y-axis: Lap time in seconds
-- Color: Driver stint
-- Line group: Team number
+- Color: Driver name
+- Line group: Driver stint
+- Facets: One panel per team
 
-What does this plot show: This plot highlights the lap by lap consistency patterns of each stint individually which makes it easier to compare pace and degradation across differnt stints
+What does this plot show: This plot highlights the lap by lap consistency patterns of each stint individually which makes it easier to compare pace and performance across different drivers within teams
 
 Key Insights:
 - Proper separation between stints helps in avoiding misleading trends
 - Allows evaluation of intra-stint consistency
 - Highlights how pace resets after pit stops or driver changes
+- Easy teammate comparisons within the same car
 
 ### Motorsport Value
 - Team wide behavior
@@ -73,16 +75,16 @@ Motorsport Value
 ## Stint Degradation
 This analysis is presented by 2 plots:
 
-### Stint Degradation: Start vs End
+### Stint Degradation: Start vs End Pace
 Plot Type: Line Chart
 
 Axes:
 X-axis: Lap number (start and end of each stint)
-Y-axis: Raw lap time (s)
+Y-axis: Average Lap Time (s)
 Line: Team number
 Color: Driver Stint
 
-What does this plot show: Each line represents a single driver stint, dispaying the first lap to the last lap of the same stint, allowing a direct visual comparison of how lap time changes over the course of that stint.
+What does this plot show: Each line represents a single driver stint, connecting the average pace of the first 3 laps to the average pace of the last 3 laps, allowing direct visual comparison of how pace changes over the course of that stint. Only stints with 5+ laps are included for meaningful analysis
 
 Key Insights:
 - Upward slope meaning that lap time increased by the end of the stint(degradation)
@@ -94,19 +96,24 @@ Motorsport Value:
 - Helps engineers evaluate how risky a stint is in terms of pace
 - Supports decisions on optimal stint length and driver deployment
 
-### Stint Degradation vs Stint Length
-Plot Type: Scatter Plot
+### Tire Degradation Rate vs Stint Length
+Plot Type: Scatter plot with OLS trendlines
 
 Axes:
 - X-axis: Stint length (laps)
-- Y-axis: Lap time degradation (end − start) (seconds)
+- Y-axis: Degradation rate (seconds per lap)
 - Color: Team number
+- Trendlines: One per team (OLS regression)
 
-What does this plot show: The points represent the stints. It measues how much time is gained or loss by taking the difference of the first and last lap of the stint.
+What does this plot show: Each point represents one stint's degradation rate, calculated using linear regression on all laps within that stint. The degradation rate shows how many seconds per lap the car slows down (positive) or speeds up (negative). Team-specific trendlines reveal whether longer stints hurt or help each team.
 
 Key Insights:
-- Positive values indicate pace loss in the stint
-- Negative value indicate gain in pace in the stint
+- Positive values: Pace loss during stint (tire degradation)
+- Negative values: Pace gain during stint (fuel burn-off effect)
+- Downward trendline: Team performs better on longer stints
+- Upward trendline: Team degrades more on longer stints
+- Flat trendline: Stint length doesn't affect degradation
+- Different teams show different patterns, revealing strategic differences
 
 Motorsport Value:
 - Optimal stint length decisions
@@ -138,9 +145,10 @@ Plot Type: Box plot
 
 Axes:
 - X-axis: Driver which is grouped by team number
-- Y-axis: Lap time delta vs stint first lap
+- Y-axis: Lap time delta(seconds)
+- Color: Driver name
 
-What does this plot show: The plot compares the pace of the drivers within the same team.
+What does this plot show: This plot compares driver pace within the same team. Each lap time is measured against the average of the first 3 laps of that driver's stint (baseline). Only laps after the baseline period (lap 4+) are analyzed.
 
 Key Insights:
 - Tighter box indicating driver is more consistent
@@ -156,16 +164,22 @@ Plot Type: Violin plot
 
 Axes:
 - X-axis: Team number
-- Y-axis: Lap time delta
+- Y-axis: Lap time Δ vs baseline (seconds)
+- Color: Team
 
-What does this plot show: The plot compares the pace between the teams.
+What does this plot show: This plot compares overall team pace. Like the driver analysis, each lap is measured against the average of the first 3 laps of each stint. All drivers' data is combined per team, and all laps are included
 
 Key Insights:
 - Narrow violins means consistent race pace
 - Wide violins means high variability
 - Skewed distributions means aggressive or conservative strategies
+- Median and quartiles show typical degradation patterns
 
 Motorsport Value:
 - Comparing overall team performance
 - Identifying consistency advantages
 - Helps in strategy and technical debriefs
+
+## Notes
+- Baseline Calculation: Throughout this analysis, "baseline pace" refers to the average lap time of the first 3 laps of each stint (laps 0, 1, 2). This provides a starting reference that smooths out outliers from individual laps.
+- All analyses include all racing data with outliers retained to show true race conditions and hidden patterns. Extreme values represent traffic, incidents, and exceptional performance moments.
