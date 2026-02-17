@@ -1,6 +1,11 @@
 # WEC 2021 Analysis
 This project focuses on the Hypercar Class of the 2021 WEC Championship with analysis performed between the teams for each race of the season. The goal is to extract performance, consistency, and strategic insights that are crucial to motorsport engineers, strategists, and analysts.
 
+The teams analyzed are those teams who participated in each race of the 2021 Season:
+- Toyota Gazoo Racing #7
+- Toyota Gazoo Racing #8
+- Alpine Elf Matmut #36
+
 The data was utilized from kaggle. The data was then filtered to only give me the 2021 season.
 
 Link: https://www.kaggle.com/datasets/tristenterracciano/fia-wec-lap-data-20122022 
